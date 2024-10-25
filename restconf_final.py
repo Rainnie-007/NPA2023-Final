@@ -122,7 +122,7 @@ def status():
         oper_status = response_json['ietf-interfaces:interface']['oper-status']
         if admin_status == 'up' and oper_status == 'up':
             return "Interface is up and running"
-        elif admin_status == 'down' and oper_status == 'down':
+        elif admin_status == 'down' and oper_status == 'downy':
             return "Interface is down"
     elif(resp.status_code == 404):
         print("STATUS NOT FOUND: {}".format(resp.status_code))
